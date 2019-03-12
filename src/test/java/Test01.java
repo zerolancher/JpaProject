@@ -20,6 +20,7 @@ public class Test01 {
         manager.getTransaction().commit();
         manager.close();
         factory.close();
+
     }
 
     @Test // 查，立即加载
@@ -27,7 +28,7 @@ public class Test01 {
         EntityManager manager = JpaUtils.getEntityManager();
         Customer customer = manager.find(Customer.class, 11L);
         //System.out.println(customer);
-
+        System.out.println("代码修改");
     }
 
     @Test
